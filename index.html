@@ -4,6 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <title>Iablokova Mariia | Portfolio</title>
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -11,142 +12,253 @@
   <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet">
 
   <style>
+
+    /* GENERAL */
+
     * {
       box-sizing: border-box;
       margin: 0;
       padding: 0;
     }
 
+    html {
+      width: 100%;
+    }
+
     body {
       min-height: 100vh;
       min-height: 100dvh;
+      width: 100%;
+
       background: #fafafa;
       color: #111;
+
       font-family: 'Outfit', sans-serif;
+
       display: flex;
       flex-direction: column;
     }
 
+    /* HEADER */
+
     header {
       padding: 32px 5%;
+
       font-size: 22px;
       font-weight: 500;
+
+      flex-shrink: 0;
     }
-      
+
+    /* MAIN CONTENT */
+
     main {
-        flex: 1;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        padding: 30px 5%;
+      flex: 1;
+
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+
+      width: 100%;
+      padding: 30px 5%;
     }
-    
+
     .eyebrow {
       font-size: 13px;
+      font-weight: 400;
+
       letter-spacing: 3px;
       text-transform: uppercase;
+
       margin-bottom: 30px;
     }
+
+    /* MAIN TITLE */
 
     h1 {
       font-size: clamp(48px, 8vw, 120px);
       font-weight: 400;
+
       line-height: 1.05;
       letter-spacing: -0.055em;
+
       max-width: 1100px;
     }
 
-    
-.description {
-    width: 100%;
-    max-width: 850px;
-    margin-top: 42px;
-    color: #777;
-    font-size: clamp(16px, 1.5vw, 22px);
-    line-height: 1.6;
-}
-
-.description-main {
-    margin: 0;
-    text-wrap: pretty;
-}
-
-.description-end {
-    margin-top: 34px;
-}
-    
-    footer {
-    width: 100%;
-    padding: 20px 5% 25px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 20px;
-    flex-wrap: wrap;
-    font-size: 13px;
-    color: #777;
-    flex-shrink: 0;
-    position: static;
-}
-    
-   
-@media (max-height: 850px) and (min-width: 601px) {
-    header {
-        padding-top: 20px;
-        padding-bottom: 20px;
-    }
-
-    main {
-        padding-top: 20px;
-        padding-bottom: 20px;
-    }
-
-    .eyebrow {
-        margin-bottom: 24px;
-    }
+    /* DESCRIPTION */
 
     .description {
-        margin-top: 32px;
+      width: 100%;
+      max-width: 850px;
+
+      margin-top: 42px;
+
+      color: #777;
+      font-size: clamp(16px, 1.5vw, 22px);
+      font-weight: 300;
+      line-height: 1.6;
+    }
+
+    .description-main {
+      margin: 0;
+      text-wrap: pretty;
     }
 
     .description-end {
-        margin-top: 28px;
+      margin-top: 34px;
     }
+
+    /* FOOTER */
 
     footer {
+      width: 100%;
+
+      padding: 20px 5% 25px;
+
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      gap: 12px 20px;
+      flex-wrap: wrap;
+
+      font-size: 13px;
+      font-weight: 400;
+      color: #777;
+
+      flex-shrink: 0;
+    }
+
+    /* SMALLER DESKTOP SCREENS */
+
+    @media (max-height: 850px) and (min-width: 601px) {
+
+      header {
+        padding-top: 20px;
+        padding-bottom: 20px;
+      }
+
+      main {
+        padding-top: 20px;
+        padding-bottom: 20px;
+      }
+
+      .eyebrow {
+        margin-bottom: 24px;
+      }
+
+      h1 {
+        font-size: clamp(48px, 7vw, 100px);
+      }
+
+      .description {
+        margin-top: 32px;
+      }
+
+      .description-end {
+        margin-top: 28px;
+      }
+
+      footer {
         padding-top: 16px;
         padding-bottom: 20px;
+      }
     }
-}
+
+    /* MOBILE */
+
+    @media (max-width: 600px) {
+
+      header {
+        padding: 24px 6%;
+        font-size: 19px;
+      }
+
+      main {
+        padding: 40px 6%;
+      }
+
+      .eyebrow {
+        font-size: 11px;
+        letter-spacing: 2px;
+        margin-bottom: 24px;
+      }
+
+      h1 {
+        font-size: clamp(42px, 10vw, 60px);
+        line-height: 1.08;
+      }
+
+      .description {
+        margin-top: 32px;
+        font-size: 16px;
+        line-height: 1.6;
+      }
+
+      .description-end {
+        margin-top: 28px;
+      }
+
+      footer {
+        padding: 24px 6%;
+        font-size: 12px;
+      }
+    }
 
   </style>
-
-  
 </head>
 
 <body>
-  <header>Iablokova Mariia</header>
+
+  <!-- HEADER -->
+
+  <header>
+    Iablokova Mariia
+  </header>
+
+  <!-- MAIN CONTENT -->
 
   <main>
-    <p class="eyebrow">Portfolio / 2026</p>
-    <h1>Good design<br>takes time.</h1>
-   <div class="description">
-    <p class="description-main">
+
+    <p class="eyebrow">
+      Portfolio / 2026
+    </p>
+
+    <h1>
+      Good design<br>
+      takes time.
+    </h1>
+
+    <div class="description">
+
+      <p class="description-main">
         And so does putting together a portfolio.
         A selection of my work in UX/UI, visual identity,
         and digital design is on its way.
-    </p>
+      </p>
 
-     <p class="description-end">
+      <p class="description-end">
         Check back later.
-    </p>
-  </div>
-</main>
+      </p>
 
-<footer>
-    <span>UX/UI · Visual Design · Branding</span>
-    <span>© 2026 Iablokova Mariia</span>
-</footer>
+    </div>
+
+  </main>
+
+  <!-- FOOTER -->
+
+  <footer>
+
+    <span>
+      UX/UI · Visual Design · Branding
+    </span>
+
+    <span>
+      © 2026 Iablokova Mariia
+    </span>
+
+  </footer>
 
 </body>
 </html>
+
