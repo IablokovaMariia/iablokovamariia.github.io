@@ -32,15 +32,15 @@
       font-size: 22px;
       font-weight: 500;
     }
-
+      
     main {
-      flex: 1;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      padding: 50px 5%;
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 30px 5%;
     }
-
+    
     .eyebrow {
       font-size: 13px;
       letter-spacing: 3px;
@@ -76,15 +76,19 @@
 }
     
     footer {
-      padding: 30px 5%;
-      display: flex;
-      justify-content: space-between;
-      gap: 20px;
-      flex-wrap: wrap;
-      font-size: 13px;
-      color: #777;
-    }
-
+    width: 100%;
+    padding: 20px 5% 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    font-size: 13px;
+    color: #777;
+    flex-shrink: 0;
+    position: static;
+}
+    
     @media (max-width: 600px) {
       header { padding-top: 24px; }
       main { padding-top: 40px; padding-bottom: 40px; }
