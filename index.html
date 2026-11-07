@@ -1,123 +1,101 @@
+
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Iablokova Mariia | Portfolio</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&display=swap" rel="stylesheet">   
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Iablokova Mariia | Portfolio</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      min-height: 100vh;
+      min-height: 100dvh;
+      background: #fafafa;
+      color: #111;
+      font-family: 'Outfit', sans-serif;
+      display: flex;
+      flex-direction: column;
+    }
+
+    header {
+      padding: 32px 5%;
+      font-size: 22px;
+      font-weight: 500;
+    }
+
+    main {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 70px 5%;
+    }
+
+    .eyebrow {
+      font-size: 13px;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      margin-bottom: 30px;
+    }
+
+    h1 {
+      font-size: clamp(48px, 8vw, 120px);
+      font-weight: 400;
+      line-height: 1.05;
+      letter-spacing: -0.055em;
+      max-width: 1100px;
+    }
+
+    .description {
+      font-size: clamp(16px, 1.5vw, 22px);
+      color: #777;
+      font-weight: 300;
+      margin-top: 35px;
+    }
+
+    footer {
+      padding: 30px 5%;
+      display: flex;
+      justify-content: space-between;
+      gap: 20px;
+      flex-wrap: wrap;
+      font-size: 13px;
+      color: #777;
+    }
+
+    @media (max-width: 600px) {
+      header { padding-top: 24px; }
+      main { padding-top: 40px; padding-bottom: 40px; }
+      footer { font-size: 12px; }
+    }
+  </style>
 </head>
+
 <body>
+  <header>Iablokova Mariia</header>
 
-    <header>
-        <nav>
-            <span class="logo">Iablokova Mariia</span>
-        </nav>
-    </header>
+  <main>
+    <p class="eyebrow">Portfolio / 2026</p>
+    <h1>Something new<br>is coming.</h1>
+    <p class="description">
+      My portfolio is currently being updated.<br>
+      Please check back soon.
+    </p>
+  </main>
 
-    <main>
-        <section class="box">
-        </section>
-        <section class="hero">
-            <body>
-                <h1>Iablokova Mariia</h1>
-                <div class="wrapper">
-                      <a class="card card--hero" href="IPKN.html">
-                        <img src="images/IPKN_cut8.png" alt="IPKN">
-                      </a>
-                    
-                      <a class="card card--right" href="CreAId.html">
-                        <img src="images/CreAId_cut3.png" alt="CreAid">
-                      </a>
-                    
-                      <a class="card card--leftBottom" href="Agne.html">
-                        <img src="images/Agne_cut3.png" alt="Agne">
-                      </a>
-                    
-                      <a class="card card--rightBottom" href="DailyShot.html">
-                        <img src="images/DailyShot_cut3.png" alt="DailyShot">
-                      </a>
-            </div>
-            <p class="about-text">
-                I am UX/UI Designer with a degree in <span class="accent">Visual Communication Design</span>. I have hands-on experience in the full design process starting from user research to prototyping and strong interest in integrating <span class="accent">new technologies and UX</span> to craft intuitive and accessible digital user-centered experiences.
-            </p>
-        </section>
-        <section class="projects">
-            <div class="projects-header">
-                <h2>Projects</h2>
-                <span class="projects-date">(2023–2025)</span>
-            </div>
-            <div class="project-grid">
-                <div class="project-card">
-                    <h3>Agne</h3>
-                    <p>UX/BX/AI</p>
-                    <img src="images/Agne2.png" alt="Agne Project">
-                </div>
-                <div class="project-card">
-                    <h3>IPKN</h3>
-                    <p>BX/UX/UI</p>
-                    <img src="images/IPKN2.png" alt="IPKN Project">
-                </div>
-                <div class="project-card">
-                    <h3>DailyShot</h3>
-                    <p>UX/UI</p>
-                    <img src="images/DailyShot2.png" alt="DailyShot Project">
-                </div>
-                <div class="project-card">
-                    <h3>CreAId</h3>
-                    <p>UX/UI/AI</p>
-                    <img src="images/CreAid2.png" alt="CreAid Project">
-                </div>
-            </div>
-        </section>
-        <section class="services-section">
-                <h2 class="services-title">Services</h2>
-            <div class="services-container">
-                <div class="services-list">
-                    <div class="service-item">
-                        <h4>UX/UI Design</h4>
-                        <p>Create intuitive digital experiences that combine functional clarity with visually engaging interfaces.</p>
-                    </div>
-                    <div class="service-item">
-                        <h4>Visual Identity</h4>
-                        <p>Develop cohesive brand identities that communicate personality, values, and a memorable visual presence.</p>
-                    </div>
-                    <div class="service-item">
-                        <h4>Video Design</h4>
-                        <p>Craft dynamic video content that enhances storytelling and elevates brand communication.</p>
-                    </div>
-                    <div class="service-item">
-                        <h4>Info Design</h4>
-                        <p>Transform complex information into clear, structured, and visually compelling layouts.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-        
-        <section class="quote-section">
-            <p class="quote-accent">My Work Lives Where Creativity Meets Intelligent Design.</p>
-            <p class="quote-text">
-                I believe great products are born from the harmony of imagination, usability, and technology. Through thoughtful systems and expressive visual language, I create experiences that feel intuitive, human-centered, and future-ready.
-            </p>
-        </section>
-        
-        <footer class="footer">
-            <h2 class="footer-logo">Iablokova Mariia</h2>
-            <div class="footer-content">
-                <div class="footer-email">
-                    <a href="mailto:iablokovamariia@gmail.com">iablokovamariia@gmail.com</a>
-                </div>
-                <div class="footer-links">
-                    <a href="#">Instagram</a>
-                    <a href="#">Behance</a>
-                    <a href="#">LinkedIn</a>
-                    <a href="#">FL.RU</a>
-                </div>
-            </div>
-        </footer>
-    </main>
-
+  <footer>
+    <span>UX/UI · Visual Design · Branding</span>
+    <span>© 2026 Iablokova Mariia</span>
+  </footer>
 </body>
 </html>
